@@ -37,3 +37,11 @@ plt.xlabel("x")
 plt.ylabel("y")
 plt.legend()
 plt.show()
+
+# step 6: define loss function (Mean Squared Error)
+def compute_loss(y, Y_pred):
+    return np.mean((y - y_pred) ** 2)
+
+#compute current loss
+loss = compute_loss(y, y_pred)
+print(f"Initial Loss: {loss:.4f}")
